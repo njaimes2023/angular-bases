@@ -1,0 +1,34 @@
+
+<!-- // -- ===================================================================
+// --  proyecto : < 02-bases >
+// --  seccion :  < AngularBases  > < seccion 05>
+// --  file     :  sc_3\A01.03.Angular_basesPrimerProy.sql
+// --  file    :   src\app\heroes\list\list.component.html
+// --  ================================================================== -->
+
+<h3>Listado de Héroes</h3>
+
+ <!--si se cumple Delethero sigue de lo contrario se va a   nothingWasDeleted-->
+ <div *ngIf="deletedHero; else nothingWasDeleted">
+  <h3>Héroe borrado <small class="text-danger"> {{ deletedHero }} </small> </h3>
+</div>
+
+<ng-template #nothingWasDeleted>
+  <h3>No ha borrado nada.</h3>
+</ng-template>
+
+
+<button
+  *ngIf="heroNames.length > 0"
+  (click)="removeLastHero()"
+  class="btn btn-outline-danger">
+  Borrar último héroe
+</button>
+
+<ul class="mt-2 list-group">
+  <li  *ngFor="let name of heroNames"
+  class="list-group-item"> {{name}}   </li>
+  <!-- <li class="list-group-item"> Ironman   </li>
+  <li class="list-group-item"> Hulk    </li>
+  <li class="list-group-item"> Tork    </li> -->
+</ul>
