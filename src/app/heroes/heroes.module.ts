@@ -22,7 +22,7 @@ import { CommonModule } from '@angular/common';
   ],
   // -- error Directiva *ngIf se debe export o import
   imports: [
-    // CommonModule
+    CommonModule
   ]
 })
 export class HeroesModule {}

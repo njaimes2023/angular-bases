@@ -1,0 +1,37 @@
+ <!-- -- ===================================================================
+ --  proyecto : < 02-bases >
+ --  seccion :  < AngularBases  > < seccion 05>
+ --  fxle     : sc_3\A01.04.Angular_ExpandirBases.sql  . (Version1)
+ --  file    :   src\app\dbz\components\add-character\add-character.component.html
+ --  ================================================================== -->
+
+<h4> Agregar personaje</h4>
+<!-- emitir mensajes al padre -->
+<form class="row" (ngSubmit)="emitCharacter()">
+    <!-- invoca el name del objto declarado en el .ts -->
+    <!-- <input type="text"[value]="character.name" class="form-control mb-2" placeholder="nombre"> -->
+
+    <input type="text"
+        [(ngModel)]="character.name"
+        name="name"
+        class="form-control mb-2"
+        placeholder="nombre">
+
+    <input type="number"
+        [(ngModel)]="character.power"
+        name="power"
+        class="form-control mb-2"
+        placeholder="Poder">
+
+    <button type="submit" class="btn btn-primary">
+      agregar
+    </button>
+
+
+    <pre> estructuraObjeto character: {{ character | json }}</pre>
+    <!-- {  salida
+      "name": "",
+      "power": 0
+    }
+     -->
+</form>

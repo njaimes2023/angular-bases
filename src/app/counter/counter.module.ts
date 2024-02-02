@@ -2,7 +2,7 @@
 // -- ===================================================================
 // --  proyecto : < 02-bases >
 // --  seccion :  < AngularBases  > < seccion 05>
-// --  file    :  sc_3\A01.03.Angular_basesPrimerProy.sql
+// --  fxle    :  sc_3\A01.03.Angular_basesPrimerProy.sql
 // --  file    :   src\app\counter\counter.module.ts
 // --  ==================================================================
 

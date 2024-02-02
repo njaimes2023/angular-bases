@@ -1,3 +1,10 @@
+// <!--  -- ===================================================================
+//  --  proyecto : < 02-bases >
+//  --  seccion :  < AngularBases  > < seccion 05>
+//  --  fxle     :  sc_3\A01.03.Angular_basesPrimerProy.sql
+//  --  file    :  src\app\app.component.ts
+//  --  ================================================================== -->
+
 import { Component } from '@angular/core';
 
 @Component({

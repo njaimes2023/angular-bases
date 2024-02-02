@@ -16,10 +16,12 @@ import { HeroesModule } from './heroes/heroes.module';
 // import { ListComponent } from './heroes/list/list.component';
 
 import { AppComponent } from './app.component';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
+
     //--Cpunter
     // HeroComponent,
     // ListComponent,
@@ -29,7 +31,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     CounterModule,
-    HeroesModule
+    HeroesModule,
+    DbzModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

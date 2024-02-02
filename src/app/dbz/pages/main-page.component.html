@@ -1,0 +1,23 @@
+<!--  -- ===================================================================
+   proyecto : < 02-bases >
+ --  seccion :  < AngularBases  > < seccion 05>
+ --  fxle     : sc_3\A01.04.Angular_ExpandirBases.sql  . (Version2)
+ --  file    :   src\app\dbz\pages\main-page.component.html
+ --  ==================================================================   -->
+<h1>DBZ Personajes</h1>
+<hr>
+
+  <div class="row">
+  <div class="col">
+    <dbz-list  [characterList]="characters"
+               (onDelete)="onDeleteCharacter($event)"></dbz-list>
+  </div>
+
+  <div class="col">
+    <!-- -- "8@Output() - Emitir eventos al padre -->
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"  >  </dbz-add-character>
+  </div>
+
+</div>
+
+
